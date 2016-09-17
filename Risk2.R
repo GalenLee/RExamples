@@ -1,6 +1,5 @@
 
 # install.packages("ggplot2")
-library(ggplot2)
 
 rolls <- expand.grid(1:6, 1:6, 1:6, 1:6, 1:6)
 
@@ -13,6 +12,7 @@ rolls$outcomes <- apply(rolls, 1, function(x) {
 
 m <- mean(rolls$outcomes)
 
+library(ggplot2)
 ggplot(data = rolls, aes(rolls$outcomes)) + 
   geom_histogram(binwidth = 1, boundary = -0.5, fill="lightblue", col = "black") +
   labs(title = "Outcomes: Attacker Rolls 3 Dice, Defender Rolls 2 Dice") +
