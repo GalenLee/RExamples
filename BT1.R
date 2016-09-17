@@ -1,9 +1,6 @@
 # install.packages("gtools")
 # help(package="gtools")
 
-# Create a MATRIX with 2 rows and 3 cols, with data 1,2,3,4,5,6 
-matrix(c(1,2,3,4,5,6), 2, 3)
-
 # Load package gtools
 # Create a MATRIX with all permutation of digits 1,2,3
 library(gtools)
