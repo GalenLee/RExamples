@@ -1,5 +1,6 @@
 # Working script
 # Just playing around with commands and packages
+# rm(list=ls())
 
 install.packages("combinat")
 library()

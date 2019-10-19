@@ -11,6 +11,7 @@ rolls$outcomes <- apply(rolls, 1, function(x) {
 })
 
 m <- mean(rolls$outcomes)
+m
 
 library(ggplot2)
 ggplot(data = rolls, aes(rolls$outcomes)) + 

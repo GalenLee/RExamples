@@ -1,3 +1,4 @@
+library(gtools)
 
 m <- as.data.frame(permutations(n = 10, r = 8) - 1)
 colnames(m) <- c("S", "E", "N", "D", "M", "O", "R", "Y")
